@@ -182,43 +182,159 @@
             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.523 2.094a.336.336 0 0 0-.06-.007h-.005c-.157.007-.838.048-1.62.203a8.397 8.397 0 0 0-.965.266c-.532.178-1.1.442-1.593.814-.998.755-1.766 1.96-2.285 3.541-.262.796-.43 1.666-.503 2.574a.34.34 0 0 0 .078.27.337.337 0 0 0 .264.122h.035c.12-.003.568-.048 1.183-.14a9.084 9.084 0 0 0 1.176-.27 6.23 6.23 0 0 0 .623-.2 6.84 6.84 0 0 1 1.51-.577 7.38 7.38 0 0 1 1.547-.217c.22-.008.437-.012.653-.012a7.27 7.27 0 0 1 3.464.948c.39.242.76.544 1.097.92.19.21.36.439.503.683.075.128.145.263.208.402a.333.333 0 0 0 .293.175.338.338 0 0 0 .265-.14c.372-.498.645-1.117.82-1.833.178-.723.256-1.542.256-2.427 0-1.348-.286-2.903-.87-4.344-.446-1.093-1.125-1.987-1.971-2.618a5.44 5.44 0 0 0-.664-.433.329.329 0 0 0-.085-.037z"/><path d="M12 0C8.69 0 5.84 1.92 4.62 4.75a.36.36 0 0 0 .33.51h.01a.36.36 0 0 0 .31-.18C6.37 2.57 8.99 1.05 12 1.05s5.63 1.52 6.73 3.98a.36.36 0 0 0 .31.18h.01a.36.36 0 0 0 .33-.51C18.16 1.92 15.31 0 12 0zM6.7 7.56c-.5 0-1.07.12-1.07.12a.36.36 0 0 0 .22.68s.48-.12.85-.12c.67 0 1.08.3 1.3.58a3.68 3.68 0 0 1 .65 1.33c.07.34.12.72.12 1.13v4.05c0 .33-.07.63-.18.89a.36.36 0 0 0 .31.54h.02a.36.36 0 0 0 .32-.2c.19-.42.3-1 .3-1.67V9.9c0-.54-.07-1.04-.2-1.47a4.57 4.57 0 0 0-.77-1.55c-.56-.74-1.35-1.32-2.5-1.32zm6.6 0c-1.15 0-1.94.58-2.5 1.32a4.57 4.57 0 0 0-.77 1.55c-.13.43-.2.93-.2 1.47v4.42c0 .67.11 1.25.3 1.67a.36.36 0 0 0 .32.2h.02a.36.36 0 0 0 .31-.54c-.11-.26-.18-.56-.18-.89V9.58c0-.41.05-.79.12-1.13a3.68 3.68 0 0 1 .65-1.33c.22-.28.63-.58 1.3-.58.37 0 .85.12.85.12a.36.36 0 0 0 .22-.68s-.57-.12-1.07-.12z"/></svg>
             <h3>Android Kurulumu</h3>
           </div>
-          <span class="install-time">~1 dakika</span>
+          <span class="install-time">~3 dakika</span>
         </div>
         <div class="install-steps">
+          <!-- Adim 1: Indir -->
           <div class="install-step">
             <div class="step-number">1</div>
             <div class="step-content">
               <h4>APK Dosyasini Indir</h4>
-              <p>Asagidaki "Android APK" butonuna tikla. Dosya inmeye baslayacak. Bittiinde ekranin ustundeki bildirimlerden "Indirme tamamlandi" uyarisini goreceksin.</p>
-            </div>
-          </div>
-          <div class="install-step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h4>Bilinmeyen Kaynaklara Izin Ver</h4>
-              <p>Eger daha once APK kurmadiysan, telefon "Bu kaynaktan uygulama yuklemeye izin ver" diye sorabilir. <strong>"Ayarlara git"</strong> -> <strong>"Bilinmeyen kaynaklardan yuklemeye izin ver"</strong> secenegini ac. Bunu sadece bir kez yapman yeterli.</p>
-              <div class="step-phone-path">
-                <span>⚙️ Ayarlar → 🔒 Uygulamalar → 🔑 Bilinmeyen Kaynaklar</span>
+              <p>Sayfanin altindaki <strong>"Android APK"</strong> butonuna tikla. Tarayici dosyayi indirmeye baslayacak.</p>
+              <p style="margin-top:8px;">Indirme basladiginda ekranin ust kismininda bir bildirim gorunecek: <strong>"Ocelot.apk indiriliyor..."</strong>. Indirme suresi internet hizina gore 10-60 saniye surer.</p>
+              <p style="margin-top:8px;">Indirme tamamlaninca ayni bildirimde <strong>"Indirme tamamlandi"</strong> yazisi gorunur. <strong>Simdi bu bildirime dokun</strong> — dosya acilacak.</p>
+              <div class="install-tip">
+                <strong>Alternatif:</strong> Bildirimi kacirdiysan, tarayicindaki <strong>⋮</strong> (uc nokta) menusunu ac → <strong>"Indirmeler"</strong> sekmesine git. "Ocelot.apk" dosyasini goreceksin. Uzerine dokun.
               </div>
             </div>
           </div>
+
+          <!-- Adim 2: Bilinmeyen kaynak -->
+          <div class="install-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>"Bilinmeyen Kaynak" Uyarisi</h4>
+              <p>Dosyaya dokundugunda telefon <strong>"Bu kaynaktan uygulama yuklemeye izin vermek istiyor musunuz?"</strong> veya <strong>"Guvenlik nedeniyle bu kaynaktan uygulama yuklenemiyor"</strong> diye bir uyari gosterir.</p>
+              <p style="margin-top:10px;"><strong>Bu normal.</strong> Google Play disindan indirilen uygulamalarda Android varsayilan olarak izin ister. Sadece bir kez acman yeterli.</p>
+
+              <p style="margin-top:12px;font-weight:600;color:var(--text-primary);">Telefona gore yapman gereken adimlar:</p>
+
+              <!-- Samsung -->
+              <div class="step-phone-path" style="margin-top:12px;">
+                <strong>Samsung:</strong> "Ayarlara git" → "Bilinmeyen uygulama yuklemeleri" → Tarayicin yanindaki <strong>ac/kapali dugmesi</strong>ni "Ac" konumuna getir
+              </div>
+              <!-- Xiaomi -->
+              <div class="step-phone-path">
+                <strong>Xiaomi / Redmi / POCO:</strong> "Ayarlara git" → "Gizlilik" → "Ozel izinler" → "Bilinmeyen kaynaklardan yukleme" → Tarayicini sec → <strong>Ac</strong>
+              </div>
+              <!-- Huawei -->
+              <div class="step-phone-path">
+                <strong>Huawei / Honor:</strong> "Ayarlara git" → "Guvenlik" → "Daha fazla uygulama izni" → "Bilinmeyen kaynaklardan yuklemeye izin ver" → Tarayicini sec
+              </div>
+              <!-- Realme / Oppo / OnePlus -->
+              <div class="step-phone-path">
+                <strong>Realme / Oppo / OnePlus:</strong> "Ayarlara git" → "Gizlilik" → "Bilinmeyen kaynak uygulama yuklemeleri" → Tarayicini sec → <strong>Izin ver</strong>
+              </div>
+              <!-- Google Pixel / Android saf -->
+              <div class="step-phone-path">
+                <strong>Google Pixel / Android Saf:</strong> "Ayarlara git" → "Uygulamalar" → "Ozel uygulama erisimi" → "Bilinmeyen uygulamalar" → Tarayicini sec → <strong>Izin ver</strong>
+              </div>
+              <!-- Vivo -->
+              <div class="step-phone-path">
+                <strong>Vivo / iQOO:</strong> "Ayarlara git" → "Gizlilik" → "Bilinmeyen uygulama yukleme" → Tarayicini sec → <strong>Ac</strong>
+              </div>
+
+              <div class="install-tip">
+                <strong>Ipucu:</strong> Hangi marka telefon kullandigini bilmiyorsan, "Ayarlar" ac → ustteki arama cubuguna <strong>"bilinmeyen"</strong> yaz. "Bilinmeyen kaynaklar" ile ilgili cikan ayara tikla ve tarayicini bul.
+              </div>
+            </div>
+          </div>
+
+          <!-- Adim 3: Yukle -->
           <div class="install-step">
             <div class="step-number">3</div>
             <div class="step-content">
-              <h4>Yukle</h4>
-              <p>Indirilen dosyaya tikla. "Bu uygulama yuklenmek isteniyor" uyarisini gorunce <strong>"Yukle"</strong> butonuna bas. 5-10 saniye icinde yuklenecek.</p>
+              <h4>Uygulamayi Yukle</h4>
+              <p>Izin verdikten sonra ekranda <strong>"Bu uygulama yuklenmek isteniyor"</strong> yazan bir ekran gorunecek. Alt kisimda iki buton olacak: <strong>"Iptal"</strong> ve <strong>"Yukle"</strong>.</p>
+              <p style="margin-top:8px;"><strong>"Yukle"</strong> butonuna bas. Yukleme baslayacak. Ekranda bir ilerleme cubugu gorunecek. Bu sure 5-20 saniye surer, telefonun hizina gore degisir.</p>
+              <p style="margin-top:8px;">Yukleme sirasinda <strong>"Ocelot yukleniyor..."</strong> yazisini goreceksin. <strong>Telefonu kapatma veya ekrani kapama.</strong></p>
+              <div class="install-tip">
+                <strong>Eger "Yukle" butonu grimsi ve tiklanamiyorsa:</strong> Bu, "Bilinmeyen kaynak" izninin henuz verilmedigi anlamina gelir. 2. adima geri don ve izni ac. Sonra dosyayi tekrar ac.
+              </div>
             </div>
           </div>
+
+          <!-- Adim 4: Tamamlandi -->
           <div class="install-step">
             <div class="step-number">4</div>
             <div class="step-content">
-              <h4>Ac ve Kullan</h4>
-              <p>"Yuklendi" uyarisi ciktiginda <strong>"Ac"</strong> butonuna bas. Artik Ocelot kullaniabilirsin! Kayit ol veya giris yap, sohbete basla.</p>
+              <h4>"Yuklendi" — Artik Hazir!</h4>
+              <p>Yukleme tamamlaninca ekranda <strong>"Uygulama yuklendi"</strong> yazisi gorunecek. Alt kisimda iki buton olacak: <strong>"Bitti"</strong> ve <strong>"Ac"</strong>.</p>
+              <p style="margin-top:8px;"><strong>"Ac"</strong> butonuna bas. Ocelot uygulamasi acilacak. Ilk acilista <strong>"Bildirimlere izin ver"</strong> diye bir uyari gelecek — <strong>"Izin ver"</strong> de. Boylece yeni mesajlar geldiginde haberin olur.</p>
+              <p style="margin-top:8px;">Artik <strong>Kayit ol</strong> veya <strong>Giris yap</strong> ekrani gelecek. Kullanici adin ve sifrenle giris yap veya yeni hesap olustur. Sohbete baslayabilirsin!</p>
+              <div class="install-tip">
+                <strong>"Bitti"</strong> diyersen uygulama arka planda yuklenir. Masaustunde veya uygulama menusunde <strong>Ocelot</strong> ikonunu bulup ileride acabilirsin.
+              </div>
+            </div>
+          </div>
+
+          <!-- Adim 5: Ilk ayarlar -->
+          <div class="install-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4>Ilk Ayarlari Yap</h4>
+              <p>Ocelot acildiktan sonra su adimlari izle:</p>
+              <p style="margin-top:8px;">1. <strong>Kayit ol</strong> veya <strong>Giris yap</strong> secenegini sec</p>
+              <p>2. <strong>Kullanici adini</strong> yaz (ornegin: EmreReiz)</p>
+              <p>3. <strong>Sifreni</strong> yaz (en az 6 karakter)</p>
+              <p>4. Sistemin sana otomatik atadigi <strong>discriminator'ini</strong> gor (ornegin: #0001) — bunu hatirla, profilinde gozukecek</p>
+              <p>5. Giris yap! <strong>Sunucular ve kanallar</strong> otomatik olarak yuklenecek</p>
+              <div class="install-tip">
+                <strong>Unutma:</strong> Giriste kullanici adini + discriminator'ini birlikte kullanman gerekebilir. Ornegin: "EmreReiz#0001". Eger sadece "EmreReiz" yazdin ama birden fazla EmreReiz varsa, sistem "Birden fazla hesap bulundu" diye soracak.
+              </div>
             </div>
           </div>
         </div>
-        <div class="install-tip">
-          <strong>Ipucu:</strong> APK dosyasini dosya yoneticisinden de bulabilirsin: <strong>Indirmeler</strong> klasorunde "Ocelot.apk" dosyasi orada duruyor.
+
+        <!-- Sorun giderme -->
+        <div style="margin-top:32px; padding-top:24px; border-top:1px solid var(--border);">
+          <h3 style="font-size:1.1rem; margin-bottom:16px; color:var(--text-primary);">Sorun Giderme</h3>
+
+          <div class="install-step" style="margin-bottom:12px;">
+            <div class="step-content">
+              <h4 style="color:#f38ba8;">"Bilinmeyen uygulama" hatasi aliyorum</h4>
+              <p>2. adimi tekrar kontrol et. Her markanin farkli bir yolu var. Ayarlarda "bilinmeyen" ara.</p>
+            </div>
+          </div>
+
+          <div class="install-step" style="margin-bottom:12px;">
+            <div class="step-content">
+              <h4 style="color:#f38ba8;">"Paketleyici durduruldu" hatasi</h4>
+              <p>Telefonun hafizasi dolmus olabilir. <strong>Ayarlar → Depolama</strong> kismindan bos alan var mi kontrol et. En az 100 MB bos alan lazim.</p>
+            </div>
+          </div>
+
+          <div class="install-step" style="margin-bottom:12px;">
+            <div class="step-content">
+              <h4 style="color:#f38ba8;">Uygulama acildi ama siyah ekranda kaldi</h4>
+              <p>Uygulamayi kapat (son uygulamalar listesinden sil) ve tekrar ac. Sorun devam ederse telefonu yeniden baslat.</p>
+            </div>
+          </div>
+
+          <div class="install-step" style="margin-bottom:12px;">
+            <div class="step-content">
+              <h4 style="color:#f38ba8;">Android 6.0 ve alti</h4>
+              <p>Ocelot <strong>Android 7.0 (Nougat)</strong> ve uzerini gerektirir. Eski telefonlarda calismayabilir.</p>
+            </div>
+          </div>
+
+          <div class="install-step">
+            <div class="step-content">
+              <h4 style="color:#f38ba8;">Nasil guncellerim?</h4>
+              <p>Yeni versiyon ciktiginda uygulama icinde bildirim alirsin. Ayni APK dosyasini tekrar indirip yukle, eski surumun ustune kurulacaktir. Verilerin <strong>silinmez</strong>.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ipuclari -->
+        <div class="install-tip" style="margin-top:24px;">
+          <strong>Pro Ipuclari:</strong>
+          <ul style="margin-top:8px; padding-left:20px; list-style:disc; line-height:2;">
+            <li>APK dosyasini <strong>Dosya Yoneticisi</strong> uygulamasindan da acabilirsin: <strong>Indirmeler</strong> klasorunde "Ocelot.apk" duruyor</li>
+            <li>Uygulama <strong>otomatik guncelleme</strong> yapmaz — yeni versiyon ciktiginda siteye gelip tekrar indirmen lazim</li>
+            <li>Bildirimlere izin verirsen, uygulama kapali olsa bile yeni mesajlarda <strong>telefon bildirimi</strong> alirsin</li>
+            <li>Uygulamayi <strong>Ana Ekrana</strong sabitleyerek hizli erisim saglayabilirsin</li>
+          </ul>
         </div>
       </div>
 
@@ -243,11 +359,11 @@
         <div class="faq-grid">
           <div class="faq-item">
             <h4>"Dosya zararli olabilir" uyarisi aliyorum</h4>
-            <p>Windows, uygulamayi tanimadigi icin bu uyarisi gosteriyor. Ocelot guvenli bir uygulamadir. "Daha fazla bilgi" -> "Yine de calistir" diyebilirsin.</p>
+            <p>Windows, uygulamayi tanimadigi icin bu uyarisi gosteriyor. Ocelot guvenli bir uygulamadir. "Daha fazla bilgi" → "Yine de calistir" diyebilirsin.</p>
           </div>
           <div class="faq-item">
             <h4>"Bilinmeyen kaynak" hatasi aliyorum</h4>
-            <p>Telefonun guvenlik ayarlarinda "Bilinmeyen kaynaklardan yuklemeye izin ver" secenegini acman lazim. Bu ayar genellikle "Ayarlar -> Uygulamalar -> Gizlik" kisminda bulunur.</p>
+            <p>Yukaridaki rehberdeki 2. adimi takip et. Her telefon markasinin farkli bir yolu var. Ayarlarda "bilinmeyen" aratirsan hemen bulursun.</p>
           </div>
           <div class="faq-item">
             <h4>Uygulama acilmiyor / craslyor</h4>
