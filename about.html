@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hakkinda - Ocelot</title>
+  <meta name="description" content="Ocelot hakkinda bilgi. Modern sohbet platformu.">
+  <meta name="theme-color" content="#0f0f0f">
+  <link rel="icon" href="img/logo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar scrolled">
+    <div class="container">
+      <a href="/" class="nav-brand">
+        <img src="img/logo.jpg" alt="Ocelot">
+        <span>Ocelot</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Ana Sayfa</a></li>
+        <li><a href="#features">Ozellikler</a></li>
+        <li><a href="about.html">Hakkinda</a></li>
+        <li><a href="privacy.html">Gizlilik</a></li>
+        <li><a href="terms.html">Kosullar</a></li>
+        <li><a href="https://app.ocelot.chat" class="nav-cta">Basla</a></li>
+      </ul>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <section class="legal-page">
+    <div class="container">
+      <a href="/" class="back-link">&#8592; Ana Sayfaya Don</a>
+      <h1>Ocelot Hakkinda</h1>
+      <p class="last-updated">Gelistirme: EmreZenzei#0001</p>
+
+      <div class="legal-content">
+        <h2>Ocelot Nedir?</h2>
+        <p>Ocelot, ozgurluge ve gizlilige onem veren modern bir sohbet platformudur. Discord benzeri ozellikleri ucretsiz ve acik bir sekilde sunmayi amaclamaktadir.</p>
+
+        <h2>Neler Sunuyor?</h2>
+        <ul>
+          <li><strong>Metin Sohbet:</strong> Sunucularda ve ozel mesajlarda anlik mesajlasma, dosya paylasimi, emoji ve GIF destegi.</li>
+          <li><strong>Sesli Gorusme:</strong> Bire bir ve coklu sesli gorusme. Ekran paylasimi ve kamera destegi.</li>
+          <li><strong>Sunucu Sistemi:</strong> Kendi toplulugunuzu olusturun. Kanallar, kategoriler, roller ve yonetim araclari.</li>
+          <li><strong>Bot Sistemi:</strong> Gelistiriciler kendi botlarini olusturabilir, slash komutlari yazabilir ve 7/24 calistirabilir.</li>
+          <li><strong>Arkadaslik:</strong> Kullanici arama, arkadaslik istekleri ve durum takibi.</li>
+          <li><strong>Temalar:</strong> Kisisellestirilebilir gorunum ayarlari ve karanlik/aydinlik mod.</li>
+        </ul>
+
+        <h2>Teknoloji</h2>
+        <p>Ocelot asagidaki teknolojiler kullanilarak gelistirilmistir:</p>
+        <ul>
+          <li><strong>Frontend:</strong> Preact, TypeScript, Styled Components, MobX</li>
+          <li><strong>Backend:</strong> Supabase (PostgreSQL, Realtime, Edge Functions)</li>
+          <li><strong>Mobil:</strong> Capacitor (Android APK)</li>
+          <li><strong>Sesli Iletisim:</strong> WebRTC (Peer-to-Peer)</li>
+          <li><strong>Web Hosting:</strong> Vercel</li>
+        </ul>
+
+        <h2>Gizlilik ve Guvenlik</h2>
+        <p>Ocelot, kullanicilarinin gizliligini on planda tutar:</p>
+        <ul>
+          <li>E-posta adresi zorunlu degildir - sadece kullanici adi ile kayit olun</li>
+          <li>Sifreler hash olarak saklanir, duz metin olarak goruntulenemez</li>
+          <li>Sesli gorusmeler kaydedilmez, gercek zamanli iletim saglanir</li>
+          <li>Verileriniz reklam amacli paylasilmaz</li>
+          <li>HTTPS ile sifreli iletisim</li>
+        </ul>
+
+        <h2>Acik Kaynak</h2>
+        <p>Ocelot projesinin kaynak kodlari yakinda acik kaynak olarak paylasilacaktir. Toplulugun katkilarini bekliyoruz.</p>
+
+        <h2>Iletisim</h2>
+        <p>Sorulariniz, onerileriniz veya geri bildirimleriniz icin:</p>
+        <ul>
+          <li>E-posta: <a href="mailto:emrezenzei@gmail.com">emrezenzei@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ocelot. Tum haklari saklidir.</span>
+        <div style="display:flex;gap:16px;">
+          <a href="privacy.html" style="color:var(--text-secondary);font-size:0.85rem;">Gizlilik</a>
+          <a href="terms.html" style="color:var(--text-secondary);font-size:0.85rem;">Kosullar</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
